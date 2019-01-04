@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            Demo for Destructuring Example.
+        </title>
+    </head>
+    <body>
+        <script>
+        let {x,y,...z} ={x:1,y:9,a:10,b:20,c:30};
+      //  console.log('x: ',x);
+      //  console.log('y: ',y);
+      //  console.log('z: ', z);
+        //console.log('length: ',z.length());
+        const arr = [10,20,60,40];
+        const[x1,y1,z1] = arr;
+        console.log('x: ',x1);
+        console.log('y: ',y1);
+        console.log('z: ',z1);
+
+        var a=1,b=3;
+       [a,b] = [b,a];
+        console.log('a:',a);
+        console.log('b:',b);
+        </script>
+    </body>
+</html>
