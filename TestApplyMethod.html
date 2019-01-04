@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>A demo for Apply Method</title>
+</head>
+<body>
+    <script>
+        var person = {
+            fullName: function (city,country){
+                return this.firstName+ ' '+this.lastName+' '+city+'  '+country;
+            }
+        }
+
+        var person1 = {
+            firstName:'Sumit',
+            lastName: 'Chauhan'
+        }
+
+        var output = person.fullName.apply(person1,['Hyderababd','India']);
+        console.log('Output: ',output);
+        // Find the largest element in the Array.
+        var max = Math.max.apply('',[10,20,30]);
+        console.log('max: ',max);
+    </script>
+</body>
+</html>
